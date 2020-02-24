@@ -1,0 +1,554 @@
+body{
+    font-family: consolas;
+}
+
+#section1{
+    width: 100%;
+}
+
+.head_img{
+    width: 100%;
+    position: relative;
+}
+
+.head_img img{
+    width: 100%
+}
+
+.intro{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    margin-top: 14%;
+    margin-left: 14%;
+    
+}
+
+.intro h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.intro h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.intro h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.intro button{
+    width: 150px;
+    background: white;
+    border: 1px solid #ffb633;
+    margin-top: 15px;
+    transition: 1s;
+    color: #ffb633;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700
+}
+
+
+.intro button:hover{
+    background: #ffb633;
+    color: black;
+}
+
+
+input[type="checkbox"]{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 100000;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.icon{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 100000;
+    background: #000;
+    pointer-events: none;
+}
+
+.icon:before{
+    content: 'close';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[type="checkbox"]:checked ~ .icon:before{
+    content: 'menu';
+}
+
+ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100vh;
+    background: #000;
+    transition: 0.5s;
+    z-index: 100000;
+    overflow-y: auto;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    display: block;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    transform: translateX(10px);
+    color: #ff0
+}
+
+input[type="checkbox"]:checked ~ ul{
+    left: -300px;
+}
+
+
+#section2{
+    width: 100%;
+}
+
+.abut{
+    width: 70%;
+    margin-left: 16%;
+    padding-top: 10%;
+}
+
+.abut h1{
+    font-weight: bold;
+}
+
+.about_img{
+    width: 30%;
+    float: left
+}
+
+.about_img img{
+    width: 100%;
+    float: left;
+}
+
+.about_details{
+    margin-left: 35%
+}
+
+.call{
+    width: 150px;
+    background: white;
+    border: 1px solid #ffb633;
+    margin-top: 15px;
+    transition: 1s;
+    color: #ffb633;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700
+}
+
+
+.call:hover{
+    background: #ffb633;
+    color: black;
+}
+
+.email{
+    width: 200px;
+    background: #ffb633;
+    border: 1px solid #ffb633;
+    margin-top: 15px;
+    transition: 1s;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.email:hover{
+    background: black;
+    color: white;
+    border: 0px;
+}
+
+#section3{
+    width: 100%
+}
+
+.services{
+    width: 70%;
+    margin-left: 16%;
+    padding-top: 10%; 
+}
+
+.servicesup{
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.servicesup h1{
+    font-weight: bold;
+}
+
+.servicesdown{
+    width: 100%;
+    margin-bottom: 5%;
+    float: left;
+}
+
+.servicesdown img{
+    width: 49%;
+    margin-top: 10px;
+}
+
+#section4{
+    width: 100%;
+    clear: both;
+}
+
+.gellary{
+    width: 100%;
+    clear: both;
+}
+
+.big-img{
+    width: 45%;
+    margin-left: 8.5%;
+    float: left;
+}
+
+.big-img img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.small-img{
+    width: 40%;
+    float: left;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.small-img img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#section5{
+    width: 100%;
+    float: left;
+    background-color: #ffb633;
+    margin-top: 10%;
+    clear: both;
+}
+
+.hire_me{
+    width: 41%;
+    background-color: #ffb633;
+    margin-left: 30%;
+    margin-top: 25px;
+    padding-bottom: 50px;
+}
+
+.hire_me h1{
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.hire_me button{
+    width: 163px;
+    height: 43px;
+    color: white;
+    background: black;
+    border: 0;
+    margin-top: 8%;
+}
+
+footer{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+footer h1{
+    margin-top: 8%;
+}
+
+footer p{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.social{
+    width: 50%;
+    margin-left: 27%;
+}
+
+.logo{
+    float: left;
+    background: #c7c8c8;
+    width: 77px;
+    border-radius: 50px;
+    margin-top: 75px;
+    margin-left: 21px;
+    transition: 0.5s;
+    margin-bottom: 10%
+}
+
+.logo img{
+    width: 45px;
+    margin: 12px;
+}
+
+.logo:hover{
+    background-color: white;
+}
+
+.copyr{
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-weight: bold;
+    margin-bottom: 10%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px){
+    .services {
+    width: 83%;
+    margin-left: 9%;
+}
+    
+    .servicesup{
+        width: 85%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .intro h1 {
+    font-size: 31px;
+}
+    intro h5 {
+    font-size: 15px;
+}
+    
+    .intro h3 {
+    font-size: 11px;
+    font-weight: bold;
+}
+    
+    .intro {
+    margin-left: 8%;
+    margin-top: 4%;
+}
+    
+    .intro button {
+    width: 97px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+    
+    .abut {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 10%;
+}
+    
+    .about_img {
+    width: 75%;
+    float: left;
+    margin-left: 13%;
+    margin-top: 17%;
+}
+    
+    .about_details {
+    margin-left: 30px;
+    width: 88%;
+        text-align: center;
+}
+    
+    .about_details h1{
+    text-align: center;        
+}
+    
+    .call{
+        width: 115px;
+    }
+    
+    .email{
+        width: 135px;
+    }
+    
+    .servicesup{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .servicesdown img{
+        width: 100%;
+    }
+    
+    .small-img{
+        display: none;
+    }
+    
+    .big-img{
+        width: 92%;
+        margin-left: 4%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
